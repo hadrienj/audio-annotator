@@ -6,7 +6,7 @@
  *   data, updates components. When the user submits their work this class gets the workers
  *   annotations and other data and submits to the backend
  * Dependencies:
- *   AnnotationStages (src/annotation_stages.js), PlayBar & WorkflowBtns (src/components.js), 
+ *   AnnotationStages (src/annotation_stages.js), PlayBar & WorkflowBtns (src/components.js),
  *   HiddenImg (src/hidden_image.js), colormap (colormap/colormap.min.js) , Wavesurfer (lib/wavesurfer.min.js)
  * Globals variable from other files:
  *   audio.html (task related):
