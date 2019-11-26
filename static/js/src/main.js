@@ -32,7 +32,7 @@ function Annotator() {
     this.instructionsViewed = false;
     // Boolean, true if currently sending http post request
     this.sendingResponse = false;
-
+    this.noCheckLabels = true;
     // Create color map for spectrogram
     var spectrogramColorMap = colormap({
         colormap: magma,
@@ -226,7 +226,7 @@ Annotator.prototype = {
     // Collect data about users annotations and submit it to the backend
     submitAnnotations: function() {
         // Check if all the regions have been labeled before submitting
-        if (this.stages.annotationDataValidationCheck()) {
+        if (this.noCheckLabels || this.stages.annotationDataValidationCheck()) {
             // if (this.sendingResponse) {
             //     // If it is already sending a post with the data, do nothing
             //     return;
